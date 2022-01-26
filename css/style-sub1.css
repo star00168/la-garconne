@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
+
+
+/* 레이아웃 */
+.header { position:fixed; width:15%; height:100%; background:#FFF; top:0; left:0; z-index:100; }
+.util { width:85%; height:40px; margin-left:15%; background:#343434; color:#FFF; }
+.section { width:85%; margin-left:15%; overflow:hidden; }
+
+
+/* header 스타일시트 */
+.header h1 { width:200px; height:100px; margin-left:-103px; position:absolute; left:50%; top:90px; }
+.header h1 a { display:block; width:100%; height:100px; background:url(../img/logo.png) no-repeat; text-indent:-9999px; }
+
+.open_button { width:40px; height:auto; display:none; float:right; margin-right:20px; margin-top:30px; }
+
+.nav { width:150px; margin-right:-70px; position:absolute; right:45%; top:300px; text-align:left; color:#000; }
+.nav ul {}
+.nav ul li { line-height:50px; } 
+.nav ul li a { transition:all 0.5s; }
+.nav ul li a:hover { color:#e1d0c2; }
+
+
+.gnb { width:200px; height:50px; margin-right:-70px; position:absolute; left:22%; bottom:200px; }
+
+.gnb .gnb-box { width:200px; height:18px; float:left; }
+.gnb .gnb-box a { float:left; margin:0 5px; transition:all 0.5s; }
+.gnb .gnb-box a:hover { color:#e1d0c2; }
+
+.gnb .sns { width:200px; position:absolute; top:30px; left:30px; }
+.gnb .sns a { float:left; margin:0 7px; font-size:17px; font-weight:bold; transition:all 0.5s; }
+.gnb .sns a:hover { color:#e1d0c2; }
+
+
+/* util 스타일시트 */
+.util .left { float:left; }
+.util .left li { float:left; margin:0 15px; line-height:40px; }
+.util .left li a { color:#dadada; transition:all 0.5s; }
+.util .left li a:hover { color:#FFF; }
+
+.util .right { float:right; }
+.util .right li { float:left; margin:0 15px; line-height:40px; }
+.util .right li a { color:#dadada; transition:all 0.5s; }
+.util .right li a:hover { color:#FFF; }
+
+
+/* section - store_mainbg 스타일시트 */
+.section .store_mainbg { width:100%; height:100vh; background:url(../img/store_mainbg.jpg) center center no-repeat; background-size:cover; }
+.section .store_mainbg .main_title { position:absolute; left:50%; top:50%; transform:translate(-30%,-50%); }
+.section .store_mainbg .main_title span { font-size:0; text-indent:-9999px; background:url(../img/store_main_title.png) no-repeat; width:637px; height:378px; 
+                                          display:inline-block; background-size:cover; }
+.section .store_mainbg .location { position:absolute; bottom:65px; width:23px; height:187px; background:url(../img/location.png); background-size:cover; left:56%;
+                                    transform:translateX(-50%); }
+
+/* section - content1 스타일시트 */			
+.section .content1 { margin-top:80px; position:relative; }
+.section .content1 .video { padding-left:17.7%; position:relative; }	
+.section .content1 .video .inner { height:740px; border-radius:0 0 0 110px; overflow:hidden; }
+.section .content1 .video .inner video { width:100%; }
+
+/* section - content2 스타일시트 */
+.section .content2 { max-width:1240px; margin:0 auto; position:relative; }	
+.section .content2 .inner2 { overflow:hidden; position:relative; margin-top:120px; }
+.section .content2 .inner2 .img { position:absolute; right:0; top:0; width:50%; height:100%; line-height:0; }
+.section .content2 .inner2 .img img { width:100%; height:100%; }
+.section .content2 .inner2 .info { background:url(../img/info_img2.jpg) no-repeat; text-align:center; width:50%; padding:97px 20px; position:relative; overflow:hidden; 
+                                   z-index:1; }
+.section .content2 .inner2 .info p { font-size:16px; letter-spacing:-0.045em; } 	
+.section .content2 .inner2 .info p strong { font-weight:bold; }							   
+
+
+
+/*popup 스타일시트*/
+.popup { width:100%; height:100%; background:rgba(52,52,52,0.6); display:block; position:fixed; left:100%; z-index:100000; min-width:320px; display:none; }
+	   
+.pop_nav { width:95%; height: 100%; background:#ccc; position:relative; left:5%; }
+.pop_menu1 { width:100%; height:auto; background:#333; }
+.pop_menu1:after { display:block; content:""; clear:both; }
+.pop_menu1 li { width:25%; height:43px; float:left; text-align:center; line-height:43px; }
+.pop_menu1 li:last-child { background:none; }
+.pop_menu1 li a { display:block; width:100%; height:100%; color:#FFF; text-decoration:none; transition:all 0.3s; }
+.pop_menu1 li a:hover { color:#e1d0c2; }
+	   
+.pop_menu2 { width:100%; height:auto; background:#999; }
+.pop_menu2 li { width:100%; height:57px; border-bottom:1px solid #e8e8e8; padding-left:5%; padding-top:5%; box-sizing:border-box; line-height:18px; transition:all 0.3s; }
+.pop_menu2 li:hover { background:#e1d0c2; }
+.pop_menu2 li a { width:100%; height:100%; display:block; color:#000; text-decoration:none; font-size:1.2em; text-transform:capitalize; transition:all 0.3s; }
+.pop_menu2 li a:hover { color:#FFF; }
+.pop_menu2 li a span { font-size:0.85rem; color:#F60; }
+
+.pop_menu3 { position:absolute; bottom:100px; width:100%; height:57px; display:flex; justify-content:center; }
+.pop_menu3 li { float:left; font-size:1.2em; margin-left:45px; padding-top:2.5%; box-sizing:border-box; }
+.pop_menu3 li:first-child { margin-left:0; }
+.pop_menu3 li i { transition:all 0.3s; }
+.pop_menu3 li i:hover { color:#FFF; }
+
+
+
+/* media query */
+
+/* 1340px ~ 1030px */
+@media screen and (min-width:1030px) and (max-width:1340px) {
+	.header { position:relative; width:100%; height:130px; }
+	.header h1 { position:absolute; top:0px; }
+	
+	.nav { width:100%; margin-right:0; right:0; top:80px; }
+	.nav li { width:25%; float:left; line-height:50px; text-align:center; }
+	
+	.gnb { top:0; left:0; }  
+	
+	.util { width:100%; margin-left:0; }
+	
+	.section { width:100%; margin-left:0; }
+	
+	.popup { display:none; }
+}
+
+/* 1029px ~ 800px */
+@media screen and (min-width:800px) and (max-width:1029px) {
+	.header { position:relative; width:100%; height:130px; }
+	.header h1 { position:absolute; top:0px; }
+	
+	.nav { width:100%; margin-right:0; right:0; top:80px; }
+	.nav li { width:25%; float:left; line-height:50px; text-align:center; }
+	
+	.gnb { top:0; left:0; }  
+	
+	.util { width:100%; margin-left:0; }
+	
+	.section { width:100%; margin-left:0; }
+	
+	.popup { display:none; }
+}
+
+/* 799px ~ 0 */
+@media screen and (max-width:799px) {
+	.header { width:100%; height:90px; position:relative; }
+	.header h1 { margin-left:0; left:30px; top:0px; }
+	.open_button { width:40px; height:auto; display:block; float:right; margin-right:20px; margin-top:30px; }
+	
+	.nav { display:none; }
+	.gnb { display:none; }
+	.util { display:none; }
+	
+	.section { width:100%; margin-left:0; }
+	
+	.popup { display:block; }
+}															  

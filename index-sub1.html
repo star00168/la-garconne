@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-sacle=1, user-scalble=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>LA GARCONNEL:STORE</title>
+<link href="css/style-sub1.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"  type="text/css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+$(function(){
+	
+	$('.open_button').bind('click',function(){ // mbutoon bind 시작
+	    $('.popup').stop().animate({'left':0},200)
+		
+		if($('.popup').position().left == 0){ // if 조건문 시작
+		    $('.popup').stop().animate({left:'100%'},200)
+		} // if 조건문 끝
+		
+	    $(window).resize(function(){ /* window resize 시작 */
+		   if(window.innerWidth >= 639){
+			   $('.popup').stop().animate({left:'100%'},200	);
+		   }
+		}) //window resize 끝
+	}) //mbutton bind 끝
+});
+</script>
+</head>
+
+<body>
+
+ <!-- header 시작 -->
+ <header class="header">
+  <h1 class="logo"><a href="#">LA GARCONNE</a></h1>
+  <nav class="nav">
+   <ul>
+    <li><a href="#">PRODUCTS</a></li>
+    <li><a href="#">DESIGNER INDEX</a></li>
+    <li><a href="#">STORE</a></li>
+    <li><a href="#">CAREERS</a></li>
+   </ul>
+  </nav>
+  <div class="gnb">
+   <div class="gnb-box">
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">CONTACT</a></li>
+   </div>
+   <div class="sns">
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+   </div>
+  </div>
+  
+  <a href="#"><img src="img/menu.png" alt="" class="open_button"/></a>
+ </header>
+ <!-- header 끝 -->
+ 
+ <!-- util 시작 -->
+ <div class="util">
+  <ul class="left">
+   <li><a href="#">NEWS</a></li>
+   <li><a href="#">CART</a></li>
+  </ul>
+  <ul class="right">
+   <li><a href="#">LOGIN</a></li>
+   <li><a href="#">MAKE ACCOUNT</a></li>
+  </ul>
+ </div>
+ <!-- util 끝 -->
+ 
+ <!-- section 시작 -->
+ <section class="section">
+  <!-- stroe_mainbg -->
+  <div class="store_mainbg">
+   <div class="main_title">
+    <span>STORE LOCATION LA GARCONNE</span>
+   </div>
+   <div class="location">
+   </div>
+  </div>
+  <!-- stroe_mainbg -->
+  
+  <!-- content1 -->
+  <div class="content1">
+   <div class="video">
+    <div class="inner">
+     <video autoplay loop playsinline muted>
+      <source src="video/content1.mp4" type="video/mp4">
+     </video>
+    </div>
+   </div>
+  </div>
+  <!-- content1 -->
+  
+  <!-- content2 -->
+  <div class="content2">
+   <div class="inner2">
+    <div class="img">
+     <img src="img/info_img.jpg" alt="스토어사진">
+    </div>
+    <div class="info">
+     <p><strong>ADDRESS</strong> 465 Greenwich Street New York, NY 10013</p>
+     <p><strong>HOURS</strong> Tuesday - Saturday: 11am - 7pm / Sunday: Noon - 6pm</p>
+     <p><strong>TEL</strong> 646.553.3303</p>
+     <p><strong>EMAIL</strong> tribeca@lagarconne.com</p>
+    </div>
+   </div>
+  </div>
+  <!-- content2 -->
+ </section>
+ <!-- section 끝 -->
+ 
+ <div class="popup">
+      <nav class="pop_nav">
+          <ul class="pop_menu1">
+             <li><a href="#">LOGIN</a></li>
+             <li><a href="#">JOIN</a></li>
+             <li><a href="#">CART</a></li>
+             <li><a href="#">NEWS</a></li>
+          </ul>
+          <ul class="pop_menu2">
+             <li><a href="#">ABOUT</a></li>
+             <li><a href="#">PRODUCTS</a></li>
+             <li><a href="#">DESIGNER INDEX</a></li>
+             <li><a href="#">STORE</a></li>
+             <li><a href="#">CAREERS</a></li>
+          </ul>
+          
+          <ul class="pop_menu3">
+             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+      </nav>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-sacle=1, user-scalble=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>LA GARCONNE</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"  type="text/css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+$(function(){
+	
+	$('.open_button').bind('click',function(){ // mbutoon bind 시작
+	    $('.popup').stop().animate({'left':0},200)
+		
+		if($('.popup').position().left == 0){ // if 조건문 시작
+		    $('.popup').stop().animate({left:'100%'},200)
+		} // if 조건문 끝
+		
+	    $(window).resize(function(){ /* window resize 시작 */
+		   if(window.innerWidth >= 639){
+			   $('.popup').stop().animate({left:'100%'},200	);
+		   }
+		}) //window resize 끝
+	}) //mbutton bind 끝
+});
+</script>
+</head>
+
+<body>
+
+ <!-- header 시작 -->
+ <header class="header">
+  <h1 class="logo"><a href="index.html">LA GARCONNE</a></h1>
+  <nav class="nav">
+   <ul>
+    <li><a href="#">PRODUCTS</a></li>
+    <li><a href="#">DESIGNER INDEX</a></li>
+    <li><a href="index-sub1.html">STORE</a></li>
+    <li><a href="#">CAREERS</a></li>
+   </ul>
+  </nav>
+  <div class="gnb">
+   <div class="gnb-box">
+    <li><a href="index-sub2.html">ABOUT</a></li>
+    <li><a href="#">CONTACT</a></li>
+   </div>
+   <div class="sns">
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+   </div>
+  </div>
+  
+  <a href="#"><img src="img/menu.png" alt="" class="open_button"/></a>
+ </header>
+ <!-- header 끝 -->
+ 
+ <!-- util 시작 -->
+ <div class="util">
+  <ul class="left">
+   <li><a href="#">NEWS</a></li>
+   <li><a href="#">CART</a></li>
+  </ul>
+  <ul class="right">
+   <li><a href="#">LOGIN</a></li>
+   <li><a href="#">MAKE ACCOUNT</a></li>
+  </ul>
+ </div>
+ <!-- util 끝 -->
+ 
+ <script>
+  AOS.init();
+ </script>
+ 
+ <!-- section 시작 -->
+ <section class="section">
+  <div class="about_mainbg">
+  </div>
+  
+  <div data-aos="fade-up" data-aos-duration="1500">
+  <div class="content1">
+   <div class="layout">
+    <div class="inner">
+     <strong>About LA GARCONNE</strong>
+     <p>Founded in 2005, La Garçonne is an online fashion retailer specializing in the elegantly understated. Headquartered in New York City and serving a global clientele, La Garçonne embodies a way of life, attiring garçonnes for work and play, for moments of emotional spontaneity and focused calm, for where you are and where you'll be.</p>
+     <p>The result is an exhibit of modern sophistication. Featured collections from both established and emerging designers move easily between androgyny, femininity, and masculinity, between bold statements and timeless classics. Supported by a world-class team, and manifested in the thoughtful and creative choices our customers make daily, La Garçonne offers an aesthetic you may well recognize as your own.</p>
+    </div>
+   </div>
+  </div>
+  
+  <div data-aos="fade-up" data-aos-duration="1500">
+  <div class="content2">
+   <div class="box box1">
+    <div class="pic">
+     <img src="img/about_pic1.jpg" alt="대표">
+    </div>
+    <div class="info">
+     <strong>Youthful &amp; Free</strong>
+     <p>"La Garconne" means "Boyish woman." But Boyish doesn't mean "masculine." Boyish means Youthful) and free, and it means modern thinking of modern women. Modern women are feminine and wear pants.</p>
+    </div>
+   </div>
+   
+   <div class="box box2">
+    <div class="pic">
+     <img src="img/about_pic2.jpg" alt="상품">
+    </div>
+    <div class="info">
+     <strong>Sophisticated &amp; unique</strong>
+     <p>Modern woman. Sophisticated but unique fashion. Also, it's important to feel something rough and untidy. A look that's not too fancy!</p>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- section 끝 -->
+ 
+ <div class="popup">
+      <nav class="pop_nav">
+          <ul class="pop_menu1">
+             <li><a href="#">LOGIN</a></li>
+             <li><a href="#">JOIN</a></li>
+             <li><a href="#">CART</a></li>
+             <li><a href="#">NEWS</a></li>
+          </ul>
+          <ul class="pop_menu2">
+             <li><a href="#">ABOUT</a></li>
+             <li><a href="#">PRODUCTS</a></li>
+             <li><a href="#">DESIGNER INDEX</a></li>
+             <li><a href="#">STORE</a></li>
+             <li><a href="#">CAREERS</a></li>
+          </ul>
+          
+          <ul class="pop_menu3">
+             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+      </nav>
+  </div>
+
+</body>
+</html>

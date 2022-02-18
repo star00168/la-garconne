@@ -51,7 +51,7 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 .section article:nth-child(1) { width:60%; height:500px; }
 .section article:nth-child(1) h2 { padding-top:420px; text-align:right; font-size:60px; color:#FFF; text-shadow:3px 2px 2px #000;  transform:scale(1); 
 	                           transform:rotate(0deg); transition:all 0.5s; }
-.section article:nth-child(1):hover h2 { transform:rotateY(360deg); color:#222; text-shadow:3px 2px 2px gray;  }
+.section article:nth-child(1):hover h2 { transform:rotateY(360deg); color:#222; text-shadow:3px 2px 2px #FFF;  }
 
 .section article:nth-child(2) { width:40%; }
 .section article:nth-child(2) h2 { padding-top:70px; font-size:25px; font-weight:bold; line-height:30px; text-align:center; }

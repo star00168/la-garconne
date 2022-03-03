@@ -4,18 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-sacle=1, user-scalble=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>LA GARCONNE</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<title>LA GARCONNEL:STORE</title>
+<link href="css/style-sub1.css" rel="stylesheet" type="text/css">
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"  type="text/css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 $(function(){
 	
-	$('.open_button').bind('click',function(){ // mbutoon bind 시작
+	$('.open_button').on('click',function(){ // open_butoon on 시작
 	    $('.popup').stop().animate({'left':0},200)
 		
 		if($('.popup').position().left == 0){ // if 조건문 시작
@@ -27,7 +25,7 @@ $(function(){
 			   $('.popup').stop().animate({left:'100%'},200	);
 		   }
 		}) //window resize 끝
-	}) //mbutton bind 끝
+	}) //open_butoon on 끝
 });
 </script>
 </head>
@@ -74,48 +72,45 @@ $(function(){
  </div>
  <!-- util 끝 -->
  
- <script>
-  AOS.init();
- </script>
- 
  <!-- section 시작 -->
  <section class="section">
-  <div class="about_mainbg">
+  <!-- stroe_mainbg -->
+  <div class="store_mainbg">
+   <div class="main_title">
+    <span>STORE LOCATION LA GARCONNE</span>
+   </div>
+   <div class="location">
+   </div>
   </div>
+  <!-- stroe_mainbg -->
   
-  <div data-aos="fade-up" data-aos-duration="1500">
+  <!-- content1 -->
   <div class="content1">
-   <div class="layout">
+   <div class="video">
     <div class="inner">
-     <strong>About LA GARCONNE</strong>
-     <p>Founded in 2005, La Garçonne is an online fashion retailer specializing in the elegantly understated. Headquartered in New York City and serving a global clientele, La Garçonne embodies a way of life, attiring garçonnes for work and play, for moments of emotional spontaneity and focused calm, for where you are and where you'll be.</p>
-     <p>The result is an exhibit of modern sophistication. Featured collections from both established and emerging designers move easily between androgyny, femininity, and masculinity, between bold statements and timeless classics. Supported by a world-class team, and manifested in the thoughtful and creative choices our customers make daily, La Garçonne offers an aesthetic you may well recognize as your own.</p>
+     <video autoplay loop playsinline muted>
+      <source src="video/content1.mp4" type="video/mp4">
+     </video>
     </div>
    </div>
   </div>
+  <!-- content1 -->
   
-  <div data-aos="fade-up" data-aos-duration="1500">
+  <!-- content2 -->
   <div class="content2">
-   <div class="box box1">
-    <div class="pic">
-     <img src="img/about_pic1.jpg" alt="대표">
+   <div class="inner2">
+    <div class="img">
+     <img src="img/info_img.jpg" alt="스토어사진">
     </div>
     <div class="info">
-     <strong>Youthful &amp; Free</strong>
-     <p>"La Garconne" means "Boyish woman." But Boyish doesn't mean "masculine." Boyish means Youthful) and free, and it means modern thinking of modern women. Modern women are feminine and wear pants.</p>
-    </div>
-   </div>
-   
-   <div class="box box2">
-    <div class="pic">
-     <img src="img/about_pic2.jpg" alt="상품">
-    </div>
-    <div class="info">
-     <strong>Sophisticated &amp; unique</strong>
-     <p>Modern woman. Sophisticated but unique fashion. Also, it's important to feel something rough and untidy. A look that's not too fancy!</p>
+     <p><strong>ADDRESS</strong> 465 Greenwich Street New York, NY 10013</p>
+     <p><strong>HOURS</strong> Tuesday - Saturday: 11am - 7pm / Sunday: Noon - 6pm</p>
+     <p><strong>TEL</strong> 646.553.3303</p>
+     <p><strong>EMAIL</strong> tribeca@lagarconne.com</p>
     </div>
    </div>
   </div>
+  <!-- content2 -->
  </section>
  <!-- section 끝 -->
  
@@ -128,10 +123,10 @@ $(function(){
              <li><a href="#">NEWS</a></li>
           </ul>
           <ul class="pop_menu2">
-             <li><a href="#">ABOUT</a></li>
+             <li><a href="index-sub2.html">ABOUT</a></li>
              <li><a href="#">PRODUCTS</a></li>
              <li><a href="#">DESIGNER INDEX</a></li>
-             <li><a href="#">STORE</a></li>
+             <li><a href="index-sub1.html">STORE</a></li>
              <li><a href="#">CAREERS</a></li>
           </ul>
           
@@ -142,6 +137,6 @@ $(function(){
           </ul>
       </nav>
   </div>
-
+  
 </body>
 </html>

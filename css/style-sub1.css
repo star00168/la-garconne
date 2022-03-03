@@ -188,7 +188,7 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 
 /* 449px ~ 0 */		
 @media screen and (max-width:449px) {	
-	.header { width:100%; height:90px; position:relative; }
+	.header { width:100%; height:90px; position:fixed; }
 	.header h1 { margin-left:0; left:30px; top:0px; }
 	.open_button { width:40px; height:auto; display:block; float:right; margin-right:20px; margin-top:30px; }
 	

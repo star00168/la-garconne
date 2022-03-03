@@ -6,7 +6,7 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 /* 레이아웃 */
 .header { position:fixed; width:15%; height:100%; background:#FFF; top:0; left:0; z-index:100; }
 .util { width:85%; height:40px; margin-left:15%; background:#343434; color:#FFF; }
-.section { width:85%; margin-left:15%; overflow:hidden; }
+.section { width:85%; margin-left:15%; }
 
 
 /* header 스타일시트 */
@@ -50,13 +50,13 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 .section .store_mainbg .main_title { position:absolute; left:50%; top:50%; transform:translate(-30%,-50%); }
 .section .store_mainbg .main_title span { font-size:0; text-indent:-9999px; background:url(../img/store_main_title.png) no-repeat; width:637px; height:378px; 
                                           display:inline-block; background-size:cover; }
-.section .store_mainbg .location { position:absolute; bottom:65px; width:23px; height:187px; background:url(../img/location.png); background-size:cover; left:56%;
-                                    transform:translateX(-50%); }
+.section .store_mainbg .location { position:absolute; bottom:65px; width:23px; height:187px; background:url(../img/location.png); background-size:cover; left:58%;
+                                   transform:translateX(-50%); }
 
 /* section - content1 스타일시트 */			
 .section .content1 { margin-top:80px; position:relative; }
 .section .content1 .video { padding-left:17.7%; position:relative; }	
-.section .content1 .video .inner { height:740px; border-radius:0 0 0 110px; overflow:hidden; }
+.section .content1 .video .inner { border-radius:0 0 0 110px; overflow:hidden; }
 .section .content1 .video .inner video { width:100%; }
 
 /* section - content2 스타일시트 */
@@ -67,12 +67,12 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 .section .content2 .inner2 .info { background:url(../img/info_img2.jpg) no-repeat; text-align:center; width:50%; padding:97px 20px; position:relative; overflow:hidden; 
                                    z-index:1; }
 .section .content2 .inner2 .info p { font-size:16px; letter-spacing:-0.045em; } 	
-.section .content2 .inner2 .info p strong { font-weight:bold; }							   
-
+.section .content2 .inner2 .info p strong { font-weight:bold; }	
+								  
 
 
 /*popup 스타일시트*/
-.popup { width:100%; height:100%; background:rgba(52,52,52,0.6); display:block; position:fixed; left:100%; z-index:100000; min-width:320px; display:none; }
+.popup { width:100%; height:100%; background:rgba(52,52,52,0.6); display:block; position:fixed; left:100%; top:90px; z-index:100000; min-width:320px; display:none; }
 	   
 .pop_nav { width:95%; height: 100%; background:#ccc; position:relative; left:5%; }
 .pop_menu1 { width:100%; height:auto; background:#333; }
@@ -112,6 +112,8 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 	.util { width:100%; margin-left:0; }
 	
 	.section { width:100%; margin-left:0; }
+	.section .store_mainbg .main_title { transform:translate(-50%,-50%); }
+	.section .store_mainbg .location { left:50%; }
 	
 	.popup { display:none; }
 }
@@ -128,14 +130,17 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 	
 	.util { width:100%; margin-left:0; }
 	
-	.section { width:100%; margin-left:0; }
+	.section { width:100%; margin-left:0; }	
+	.section .store_mainbg .main_title { transform:translate(-50%,-50%); }
+	.section .store_mainbg .main_title span { width:400px; height:237px; }
+	.section .store_mainbg .location { width:17px; height:140px; left:50%; }
 	
 	.popup { display:none; }
 }
 
-/* 799px ~ 0 */
-@media screen and (max-width:799px) {
-	.header { width:100%; height:90px; position:relative; }
+/* 799px ~ 630px */
+@media screen and (min-width:630px) and (max-width:799px) {
+	.header { width:100%; height:90px; position:fixed; }
 	.header h1 { margin-left:0; left:30px; top:0px; }
 	.open_button { width:40px; height:auto; display:block; float:right; margin-right:20px; margin-top:30px; }
 	
@@ -145,5 +150,61 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 	
 	.section { width:100%; margin-left:0; }
 	
+	.section .store_mainbg .main_title { transform:translate(-50%,-50%); }
+	.section .store_mainbg .main_title span { width:400px; height:237px; }
+	.section .store_mainbg .location { width:17px; height:140px; left:50%; }
+	
+	.section .content2 { padding:0 70px; }
+	.section .content2 .inner2 .img { position:relative; right:auto; top:auto; width:100%; }
+	.section .content2 .inner2 .info { width:100%; }
+	.section .content2 .inner2 .info p { letter-spacing:-0.07em; } 	
+	
 	.popup { display:block; }
-}															  
+}
+
+/* 629px ~ 450px */
+@media screen and (min-width:450px) and (max-width:629px) {
+	.header { width:100%; height:90px; position:fixed; }
+	.header h1 { margin-left:0; left:30px; top:0px; }
+	.open_button { width:40px; height:auto; display:block; float:right; margin-right:20px; margin-top:30px; }
+	
+	.nav { display:none; }
+	.gnb { display:none; }
+	.util { display:none; }
+	
+	.section { width:100%; margin-left:0; }
+	
+	.section .store_mainbg .main_title { transform:translate(-50%,-50%); }
+	.section .store_mainbg .main_title span { width:400px; height:237px; }
+	.section .store_mainbg .location { width:17px; height:140px; left:50%; }
+	
+	.section .content2 { padding:0 50px; }
+	.section .content2 .inner2 .img { position:relative; right:auto; top:auto; width:100%; }
+	.section .content2 .inner2 .info { padding:50px 30%; }	
+	.section .content2 .inner2 .info p { letter-spacing:-0.07em; font-size:13px; } 
+	
+	.popup { display:block; }
+}
+
+/* 449px ~ 0 */		
+@media screen and (max-width:449px) {	
+	.header { width:100%; height:90px; position:relative; }
+	.header h1 { margin-left:0; left:30px; top:0px; }
+	.open_button { width:40px; height:auto; display:block; float:right; margin-right:20px; margin-top:30px; }
+	
+	.nav { display:none; }
+	.gnb { display:none; }
+	.util { display:none; }
+	
+	.section { width:100%; margin-left:0; }
+	.section .store_mainbg .main_title { transform:translate(-50%,-50%); }
+	.section .store_mainbg .main_title span { width:320px; height:190px; }
+	.section .store_mainbg .location { width:17px; height:140px; left:50%; }
+
+	.section .content2 { padding:0 20px; }
+	.section .content2 .inner2 .img { position:relative; right:auto; top:auto; width:100%; }
+	.section .content2 .inner2 .info { padding:50px 30%; }
+	.section .content2 .inner2 .info p { letter-spacing:-0.07em; font-size:13px; }		
+	
+	.popup { display:block; }	
+}

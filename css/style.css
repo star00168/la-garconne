@@ -113,7 +113,7 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 
 
 /*popup 스타일시트*/
-.popup { width:100%; height:100%; background:rgba(52,52,52,0.6); display:block; position:fixed; left:100%; z-index:100000; min-width:320px; display:none; }
+.popup { width:100%; height:100%; background:rgba(52,52,52,0.6); display:block; position:fixed; left:100%; top:90px; z-index:100000; min-width:320px; display:none; }
 	   
 .pop_nav { width:95%; height: 100%; background:#ccc; position:relative; left:5%; }
 .pop_menu1 { width:100%; height:auto; background:#333; }
@@ -187,7 +187,7 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 
 /* 799px ~ 0 */
 @media screen and (max-width:799px) {
-	.header { width:100%; height:90px; position:relative; }
+	.header { width:100%; height:90px; position:fixed; }
 	.header h1 { margin-left:0; left:30px; top:0px; }
 	.open_button { width:40px; height:auto; display:block; float:right; margin-right:20px; margin-top:30px; }
 	
@@ -195,20 +195,20 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 	.gnb { display:none; }
 	.util { display:none; }
 	
-	.section { width:100%; margin-left:0; }
+	.section { width:100%; margin-left:0; position:relative; top:90px; }
 	.section article:nth-child(1) { width:100%; }
 	.section article:nth-child(1) h2 { font-size:30px; padding-top:455px; }
-    .section article:nth-child(2) { width:100%; }
-    .section article:nth-child(3) { display:none;  }
-    .section article:nth-child(4) { display:none; }
-    .section article:nth-child(5) { width:100%; background-position:center center; }
-    .section article:nth-child(6) { width:100%; }
-    .section article:nth-child(7) { width:50%; }
-    .section article:nth-child(8) { width:50%; }
-    .section article:nth-child(9) { display:none; }
-    .section article:nth-child(10){ width:100%; }
-    .section article:nth-child(11){ width:50%; }
-    .section article:nth-child(12){ width:50%; }
+        .section article:nth-child(2) { width:100%; }
+        .section article:nth-child(3) { display:none;  }
+        .section article:nth-child(4) { display:none; }
+        .section article:nth-child(5) { width:100%; background-position:center center; }
+        .section article:nth-child(6) { width:100%; }
+        .section article:nth-child(7) { width:50%; }
+        .section article:nth-child(8) { width:50%; }
+        .section article:nth-child(9) { display:none; }
+        .section article:nth-child(10){ width:100%; }
+        .section article:nth-child(11){ width:50%; }
+        .section article:nth-child(12){ width:50%; }
 	
 	.popup { display:block; }
 }

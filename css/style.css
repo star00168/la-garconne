@@ -81,7 +81,7 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 .section article:nth-child(8):hover { background-color:#222; }
 
 .section article:nth-child(9) {}
-.section article:nth-child(9) h2 { padding-top:105px; text-align:center; font-size:20px; font-weight:bold; color:#FFF; }
+.section article:nth-child(9) h2 { padding-top:105px; text-align:center; font-size:20px; font-weight:bold; color:#FFF; text-shadow:3px 2px 2px #000; }
 
 .section article:nth-child(10) { width:40%; }
 .section article:nth-child(10) h2 { padding-top:105px; font-size:30px; font-weight:bold; color:#FFF; text-shadow:3px 2px 2px #000; 

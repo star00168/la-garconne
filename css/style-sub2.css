@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@star00168 
+star00168
+/
+la-garconne
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+la-garconne/css/style-sub2.css
+@star00168
+star00168 Update style-sub2.css
+Latest commit 8ea408d 2 days ago
+ History
+ 1 contributor
+186 lines (135 sloc)  8.49 KB
+   
 @charset "utf-8";
 
 body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
@@ -58,15 +87,13 @@ body { font:12px/1.6 "Theinhardt Regular",Arial,sans-serif; min-width:320px; }
 .section .content2 { margin-top:150px; position:relative; width:100%; background:#f7f7f7; }
 .section .content2 .box { overflow:hidden; position:relative; margin-top:80px; padding:90px 4.355% 55px 10px; } 
 .section .content2 .box1 .pic { position:relative; float:left; width:43.558%; height:345px; overflow:hidden; }
-.section .content2 .box1 .pic img { position:absolute; right:-100px; top:50%; transform:translate(-50%,-50%); width:auto; height:100%; max-width:1000%; 
-                                   box-shadow:5px 5px 5px #000; }
+.section .content2 .box1 .pic img { position:absolute; left:85px; width:60%; height:auto; max-width:1000%; box-shadow:5px 5px 5px #000; }
 .section .content2 .box1 .info { float:right; width:calc(100% - 50.543%); margin-right:6.8999%; margin-top:80px; }
 .section .content2 .box1 .info strong { color:#233b62; font-size:24px; font-weight:bold; letter-spacing:-0.025em; line-height:1.25; border-bottom:3px solid #233b62; 
                                        margin-bottom:10px; padding-bottom:10px; }
 .section .content2 .box1 .info p { position:relative; color:#666; font-size:15px; letter-spacing:-0.06em; margin-top:40px; }
 .section .content2 .box2 .pic { position:relative; float:right; width:43.558%; height:345px; overflow:hidden; }
-.section .content2 .box2 .pic img { position:absolute; right:-100px; top:50%; transform:translate(-50%,-50%); width:auto; height:100%; max-width:1000%; 
-                                   box-shadow:5px 5px 5px #000; }
+.section .content2 .box2 .pic img { position:absolute; right:100px; width:60%; height:auto; max-width:1000%; box-shadow:5px 5px 5px #000; }
 .section .content2 .box2 .info { float:left; width:calc(100% - 50.543%); margin-left:6.8999%; margin-top:80px; }
 .section .content2 .box2 .info strong { color:#233b62; font-size:24px; font-weight:bold; letter-spacing:-0.025em; line-height:1.25; border-bottom:3px solid #233b62; 
                                        margin-bottom:10px; padding-bottom:10px; }
